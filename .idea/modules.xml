@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/adding/adding.iml" filepath="$PROJECT_DIR$/adding/adding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter.iml" filepath="$PROJECT_DIR$/chapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arrayys/equals.iml" filepath="$PROJECT_DIR$/arrayys/equals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/message/message.iml" filepath="$PROJECT_DIR$/message/message.iml" />
+    </modules>
+  </component>
+</project>
