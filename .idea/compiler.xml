@@ -25,6 +25,7 @@
         <processorPath useClasspath="true" />
         <module name="adding" />
         <module name="arrayys" />
+        <module name="equals" />
         <module name="message" />
       </profile>
     </annotationProcessing>

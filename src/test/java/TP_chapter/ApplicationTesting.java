@@ -8,10 +8,7 @@ import TP_chapter.determineNull.CheckIsNull;
 import TP_chapter.determineTrue.ReturnTrue;
 import TP_chapter.objectEquality.CheckObjectEquality;
 import TP_chapter.objectIdentity.CheckObjectIdentity;
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 
 /**
  * Created by student on 2016/03/02.
@@ -30,6 +27,8 @@ public class ApplicationTesting {
     CheckNonNull notNullValue = new CheckNonNull();
     DetermineTimeout myTout = new DetermineTimeout();
     DetermineArrayContent myArrayy = new DetermineArrayContent();
+    DetermineDisabling disable = new DetermineDisabling();
+    DetermineFailing fail = new DetermineFailing();
 
     @Before
     public void setUp() throws Exception {
@@ -91,8 +90,18 @@ public class ApplicationTesting {
         Assert.assertEquals(myArrayy.names1[1], myArrayy.names2[1]);
     }
 
+    @Ignore
+    public void testDiasbling() throws Exception
+    {
+        Assert.assertEquals(40, disable.disabling());
+    }
 
 
+    @Test
+    public void testFailing() throws Exception{
+        Assert.assertNotEquals(0,fail.failing());
+        //Assert.fail("assert failed");
+    }
 
     @After
     public void tearDown() throws Exception {
